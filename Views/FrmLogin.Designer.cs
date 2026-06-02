@@ -30,8 +30,6 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblJudul = new System.Windows.Forms.Label();
-            this.btnDonatur = new System.Windows.Forms.Button();
-            this.btnPengelola = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -39,6 +37,8 @@
             this.lblLupaPassword = new System.Windows.Forms.LinkLabel();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.rbDonatur = new System.Windows.Forms.RadioButton();
+            this.rbPengelola = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,24 +58,6 @@
             this.lblJudul.Size = new System.Drawing.Size(72, 16);
             this.lblJudul.TabIndex = 1;
             this.lblJudul.Text = "ReuseHub";
-            // 
-            // btnDonatur
-            // 
-            this.btnDonatur.Location = new System.Drawing.Point(117, 184);
-            this.btnDonatur.Name = "btnDonatur";
-            this.btnDonatur.Size = new System.Drawing.Size(94, 37);
-            this.btnDonatur.TabIndex = 2;
-            this.btnDonatur.Text = "Donatur";
-            this.btnDonatur.UseVisualStyleBackColor = true;
-            // 
-            // btnPengelola
-            // 
-            this.btnPengelola.Location = new System.Drawing.Point(269, 184);
-            this.btnPengelola.Name = "btnPengelola";
-            this.btnPengelola.Size = new System.Drawing.Size(100, 37);
-            this.btnPengelola.TabIndex = 3;
-            this.btnPengelola.Text = "Pengelola";
-            this.btnPengelola.UseVisualStyleBackColor = true;
             // 
             // lblEmail
             // 
@@ -123,7 +105,6 @@
             this.lblLupaPassword.TabIndex = 8;
             this.lblLupaPassword.TabStop = true;
             this.lblLupaPassword.Text = "Register kalo belom punya akun";
-            this.lblLupaPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // txtEmail
             // 
@@ -141,11 +122,35 @@
             this.txtPassword.TabIndex = 10;
             this.txtPassword.Text = "Password";
             // 
+            // rbDonatur
+            // 
+            this.rbDonatur.AutoSize = true;
+            this.rbDonatur.Location = new System.Drawing.Point(114, 173);
+            this.rbDonatur.Name = "rbDonatur";
+            this.rbDonatur.Size = new System.Drawing.Size(75, 20);
+            this.rbDonatur.TabIndex = 11;
+            this.rbDonatur.TabStop = true;
+            this.rbDonatur.Text = "Donatur";
+            this.rbDonatur.UseVisualStyleBackColor = true;
+            // 
+            // rbPengelola
+            // 
+            this.rbPengelola.AutoSize = true;
+            this.rbPengelola.Location = new System.Drawing.Point(270, 173);
+            this.rbPengelola.Name = "rbPengelola";
+            this.rbPengelola.Size = new System.Drawing.Size(90, 20);
+            this.rbPengelola.TabIndex = 12;
+            this.rbPengelola.TabStop = true;
+            this.rbPengelola.Text = "Pengelola";
+            this.rbPengelola.UseVisualStyleBackColor = true;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 553);
+            this.Controls.Add(this.rbPengelola);
+            this.Controls.Add(this.rbDonatur);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblLupaPassword);
@@ -153,8 +158,6 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.btnPengelola);
-            this.Controls.Add(this.btnDonatur);
             this.Controls.Add(this.lblJudul);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmLogin";
@@ -170,8 +173,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblJudul;
-        private System.Windows.Forms.Button btnDonatur;
-        private System.Windows.Forms.Button btnPengelola;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button btnLogin;
@@ -179,5 +180,7 @@
         private System.Windows.Forms.LinkLabel lblLupaPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.RadioButton rbDonatur;
+        private System.Windows.Forms.RadioButton rbPengelola;
     }
 }
