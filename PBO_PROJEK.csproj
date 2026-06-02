@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Auth.cs" />
+    <Compile Include="Helpers\database.cs" />
     <Compile Include="Models\Donasi.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Verifikasi.cs" />
@@ -79,9 +81,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Helpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
