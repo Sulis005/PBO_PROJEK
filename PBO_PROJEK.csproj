@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Auth.cs" />
+    <Compile Include="Controllers\Kategori.cs" />
     <Compile Include="Helpers\database.cs" />
     <Compile Include="Models\Donasi.cs" />
     <Compile Include="Models\User.cs" />
