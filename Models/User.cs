@@ -29,31 +29,5 @@ namespace PBO_PROJEK.Models
         }
     }
 
-    class Pengelola : User
-    {
-        public int id_pengelola { get; set; }
-        public void GetPengelola()
-        {
-            Console.WriteLine("ID Pengelola: " + id_pengelola);
-        }
-    }
-
-    class Donatur : User
-    {
-        public int id_donatur { get; set; }
-        public void GetDonatur()
-        { }
-        public string alamat { get; set; }
-        public int no_telp { get; set; }
-
-        public void getAlamat()
-        { }
-
-        public void setAlamat(string alamat)
-        { }
-
-    }
-
-
 }
        
