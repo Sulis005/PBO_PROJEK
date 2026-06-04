@@ -110,7 +110,6 @@ namespace PBO_PROJEK.Views
         {
             FrmRegister frmRegister = new FrmRegister();
             frmRegister.ShowDialog();
-            this.Close();
         }
 
         private void lblLupaPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
